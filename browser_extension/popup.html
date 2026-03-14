@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>SCAMNET-AI</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Include Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <span class="shield-icon">🛡️</span>
+        <h1>SCAMNET<span class="highlight">-AI</span></h1>
+      </div>
+      <p class="subtitle">AI-Powered Message Scanner</p>
+    </header>
+
+    <main>
+      <div class="input-group">
+        <label for="messageInput">Scan a suspicious message:</label>
+        <textarea id="messageInput" placeholder="Paste message or link here..." rows="4"></textarea>
+      </div>
+
+      <button id="scanButton" class="btn-primary">
+        <span class="btn-text">Analyze Risk</span>
+        <span class="loader hidden"></span>
+      </button>
+
+      <div id="resultCard" class="result-card hidden">
+        <div class="risk-ring">
+          <svg viewBox="0 0 36 36" class="circular-chart">
+            <path class="circle-bg" d="M18 2.0845
+                a 15.9155 15.9155 0 0 1 0 31.831
+                a 15.9155 15.9155 0 0 1 0 -31.831" />
+            <path id="riskCircle" class="circle" stroke-dasharray="0, 100" d="M18 2.0845
+                a 15.9155 15.9155 0 0 1 0 31.831
+                a 15.9155 15.9155 0 0 1 0 -31.831" />
+            <text x="18" y="20.35" class="percentage" id="riskScoreValue">0%</text>
+          </svg>
+        </div>
+        <div class="result-info">
+          <h2 id="resultTitle">Analyzing...</h2>
+          <p id="resultDesc">Waiting for API...</p>
+        </div>
+      </div>
+      <div id="errorMessage" class="error-message hidden"></div>
+    </main>
+
+    <footer>
+      <p>Powered by ML</p>
+      <p>Created by Dhawal Lamba</p>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+
+</html>

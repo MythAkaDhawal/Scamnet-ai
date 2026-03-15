@@ -44,4 +44,5 @@ The API will be available at http://localhost:8000. You can test the endpoint at
 - Transformer models (BERT)
 - URL scanning
 >>>>>>> be7d022 (Added working extension and ML model)
-[Here's the command to run the backend: uvicorn predict:app --reload]
+[Here's the command to run the backend: venv\Scripts\uvicorn predict:app --reload
+]

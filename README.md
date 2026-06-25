@@ -42,6 +42,6 @@ The API will be available at http://localhost:8000. You can test the endpoint at
 - More advanced NLP preprocessing
 - Transformer models (BERT)
 - URL scanning
->>>>>>> be7d022 (Added working extension and ML model)
+(Added working extension and ML model)
 [Here's the command to run the backend: venv\Scripts\uvicorn predict:app --reload
 ]
